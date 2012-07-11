@@ -33,7 +33,7 @@ namespace MCLawl
             }
             else
             {
-                Player.SendMessage(p, "This server runs on &bMCLawl" + Server.DefaultColor + ", which started as MCSharp, and was made much more feature-packed by Zallist, then picked up again and had development continued by Lawlcat, Valek and Zallist.");
+                Player.SendMessage(p, "This server runs on &bMCBacon" + Server.DefaultColor + ", which is a fork of MCLawl which started as MCSharp, and was made much more feature-packed by Zallist, then picked up again and had development continued by Lawlcat, Valek and Zallist.");
                 Player.SendMessage(p, "This server's version: &a" + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString());
 
                 TimeSpan up = DateTime.Now - Server.timeOnline;
