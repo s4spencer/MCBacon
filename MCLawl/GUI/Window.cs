@@ -592,5 +592,15 @@ namespace MCLawl.Gui
                 }
             }
         }
+
+        private void txtSystem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtChangelog_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

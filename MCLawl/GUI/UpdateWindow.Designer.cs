@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateWindow));
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmdUpdate = new System.Windows.Forms.Button();
             this.listRevisions = new System.Windows.Forms.ListBox();
@@ -44,6 +45,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::MCLawl.Properties.Resources.bacon_05;
             this.panel1.Controls.Add(this.cmdUpdate);
             this.panel1.Controls.Add(this.listRevisions);
             this.panel1.Location = new System.Drawing.Point(8, 7);
@@ -53,13 +55,16 @@
             // 
             // cmdUpdate
             // 
+            this.cmdUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.cmdUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdUpdate.BackgroundImage")));
             this.cmdUpdate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdUpdate.ForeColor = System.Drawing.Color.Lime;
             this.cmdUpdate.Location = new System.Drawing.Point(4, 70);
             this.cmdUpdate.Name = "cmdUpdate";
             this.cmdUpdate.Size = new System.Drawing.Size(82, 23);
             this.cmdUpdate.TabIndex = 2;
             this.cmdUpdate.Text = "Update";
-            this.cmdUpdate.UseVisualStyleBackColor = true;
+            this.cmdUpdate.UseVisualStyleBackColor = false;
             this.cmdUpdate.Click += new System.EventHandler(this.cmdUpdate_Click);
             // 
             // listRevisions
@@ -75,17 +80,21 @@
             // chkAutoUpdate
             // 
             this.chkAutoUpdate.AutoSize = true;
+            this.chkAutoUpdate.BackColor = System.Drawing.Color.Transparent;
             this.chkAutoUpdate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAutoUpdate.ForeColor = System.Drawing.Color.Lime;
             this.chkAutoUpdate.Location = new System.Drawing.Point(28, 4);
             this.chkAutoUpdate.Name = "chkAutoUpdate";
             this.chkAutoUpdate.Size = new System.Drawing.Size(133, 17);
             this.chkAutoUpdate.TabIndex = 1;
             this.chkAutoUpdate.Text = "Auto update to newest";
-            this.chkAutoUpdate.UseVisualStyleBackColor = true;
+            this.chkAutoUpdate.UseVisualStyleBackColor = false;
             // 
             // cmdDiscard
             // 
+            this.cmdDiscard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdDiscard.BackgroundImage")));
             this.cmdDiscard.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDiscard.ForeColor = System.Drawing.Color.Lime;
             this.cmdDiscard.Location = new System.Drawing.Point(111, 280);
             this.cmdDiscard.Name = "cmdDiscard";
             this.cmdDiscard.Size = new System.Drawing.Size(59, 23);
@@ -96,7 +105,9 @@
             // 
             // button1
             // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Lime;
             this.button1.Location = new System.Drawing.Point(35, 279);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(59, 23);
@@ -107,6 +118,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = global::MCLawl.Properties.Resources.bacon_05;
             this.panel2.Controls.Add(this.txtCountdown);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.chkNotify);
@@ -126,7 +138,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Location = new System.Drawing.Point(2, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 13);
@@ -136,18 +150,21 @@
             // chkNotify
             // 
             this.chkNotify.AutoSize = true;
+            this.chkNotify.BackColor = System.Drawing.Color.Transparent;
             this.chkNotify.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNotify.ForeColor = System.Drawing.Color.Lime;
             this.chkNotify.Location = new System.Drawing.Point(28, 23);
             this.chkNotify.Name = "chkNotify";
             this.chkNotify.Size = new System.Drawing.Size(139, 17);
             this.chkNotify.TabIndex = 2;
             this.chkNotify.Text = "Notify in-game of restart";
-            this.chkNotify.UseVisualStyleBackColor = true;
+            this.chkNotify.UseVisualStyleBackColor = false;
             // 
             // UpdateWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MCLawl.Properties.Resources.bacon_05;
             this.ClientSize = new System.Drawing.Size(223, 318);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
